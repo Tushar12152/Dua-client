@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import useAxiosPublic from "../../Hooks/axiosPublic";
-import { FaCopy } from "react-icons/fa";
+import { FaCopy, FaPlayCircle } from "react-icons/fa";
 import { CiBookmark, CiShare1 } from "react-icons/ci";
 import { MdOutlinePanoramaHorizontalSelect } from "react-icons/md";
 
@@ -16,7 +16,7 @@ const DuaAll = () => {
         }})
 
     return (
-        <div className="">
+        <div className="overscroll-auto lg:overflow-hidden">
             {
                 dua.map((item,i)=> <div  key={item?._id}>
                      
@@ -36,12 +36,15 @@ const DuaAll = () => {
 
        <p className="px-4 pb-4">{item?.reference}</p>
 
-
-     <div className="p-4 flex items-center justify-end gap-6 cursor-pointer">
+   
+     <div className="p-4 flex items-center justify-between gap-6 cursor-pointer">
+     <span className="p-4 text-2xl text-green-400"><FaPlayCircle/></span>
+         <div className="flex gap-6 items-center">
          <span className="text-xl"><FaCopy/></span>
          <span className="text-xl"><CiBookmark/></span>
          <span className="text-xl"><MdOutlinePanoramaHorizontalSelect/></span>
          <span className="text-xl"><CiShare1/></span>
+         </div>
      </div>
   
 

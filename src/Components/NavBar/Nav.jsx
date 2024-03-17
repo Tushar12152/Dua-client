@@ -13,7 +13,7 @@ import { RiMedicineBottleFill } from "react-icons/ri";
 const Nav = () => {
     return (
         <div className="flex w-full  top-0">
-            <div className="w-1/6 h-screen bg-white min-h-screen rounded-l-3xl overflow-y-auto">
+            <div className="w-1/6 hidden lg:block h-screen bg-white min-h-screen rounded-l-3xl overflow-y-auto">
                 <div className="pt-8">
                     <img className="mx-auto rounded-xl" src="https://i.ibb.co/jrBr24P/Screenshot-9.png" alt="" />
                 </div>

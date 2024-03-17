@@ -5,7 +5,7 @@ const Layout = () => {
     return (
         <div className="bg-gray-100 min-h-screen relative">
             <Nav/>
-            <div className="absolute top-32 left-72"><Outlet/></div>
+            <div className="lg:absolute top-32 left-72"><Outlet/></div>
         </div>
     );
 };

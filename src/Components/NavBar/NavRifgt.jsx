@@ -10,7 +10,7 @@ const NavRight = () => {
   </div>
   <div className="flex-none gap-24">
 
-    <div className="form-control relative">
+    <div className="form-control relative hidden lg:block">
       <input type="text" placeholder="Search By Dua Name" className="input input-bordered w-24 md:w-auto" />
 
       <button className="btn btn-ghost absolute top-0 right-0"><FaSearch/></button>

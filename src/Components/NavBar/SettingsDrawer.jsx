@@ -1,6 +1,6 @@
 import { IoLanguage, IoSettingsOutline } from "react-icons/io5";
 import { MdOutlineDisplaySettings } from "react-icons/md";
-
+import { PiCirclesFour } from "react-icons/pi";
 
 
 const SettingsDrawer = () => {
@@ -27,9 +27,9 @@ const SettingsDrawer = () => {
 
       <li className="text-center bg-gray-100"> <a> <span className=" rounded-full bg-white  p-5 "> < MdOutlineDisplaySettings/> </span> Genarel Setting</a></li>
 
-      <li className="text-center bg-gray-100"> <a> <span className=" rounded-full bg-white  p-5 "> <IoLanguage /> </span> Font Setting</a></li>
+      <li className="text-center bg-gray-100"> <a> <span className=" rounded-full bg-white  p-5 "> <PiCirclesFour /> </span> Font Setting</a></li>
 
-      <li className="text-center bg-gray-100"> <a> <span className=" rounded-full bg-white  p-5 "> <IoLanguage /> </span> Apperance Setting</a></li>
+      <li className="text-center bg-gray-100"> <a> <span className=" rounded-full bg-white  p-5 "> <PiCirclesFour /> </span> Apperance Setting</a></li>
 
       </div>
       

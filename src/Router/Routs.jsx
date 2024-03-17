@@ -4,6 +4,7 @@ import DuaDAshboard from "../Components/Dua/DuaDAshboard";
 import AddDua from "../Components/Dua/AddDua";
 import DuaDetails from "../Components/Dua/DuaDetails";
 import DuaAll from "../Components/Dua/DuaAll";
+import Dummy from "../Components/Dummy";
 
 const Routs = createBrowserRouter([
 
@@ -15,6 +16,10 @@ const Routs = createBrowserRouter([
             {
                 path:'/addDua',
                 element:<AddDua/>
+            },
+            {
+                path:'/messages',
+                element:<Dummy/>
             },
             {
                 path:'/',
@@ -29,7 +34,7 @@ const Routs = createBrowserRouter([
                     {
                         path:'/details/:id',
                         element:<DuaDetails/>,
-                        loader:({params})=>fetch(`http://localhost:5002/dua/${params.id}`)
+                        loader:({params})=>fetch(`https://dua-server-side-mocha.vercel.app/dua/${params.id}`)
                     }
                 ]
             }

@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const result=axios.create({
-    baseURL: 'http://localhost:5002/'
+    baseURL: 'https://dua-server-side-mocha.vercel.app/'
   });
 
 const useAxiosPublic = () => {
