@@ -5,8 +5,8 @@ const result=axios.create({
     baseURL: 'http://localhost:5002/'
   });
 
-const axiosPublic = () => {
+const useAxiosPublic = () => {
     return result;
 };
 
-export default axiosPublic;
+export default useAxiosPublic;

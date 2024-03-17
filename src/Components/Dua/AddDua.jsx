@@ -1,5 +1,9 @@
+import toast from "react-hot-toast";
+import useAxiosPublic from "../../Hooks/axiosPublic";
 
 const AddDua = () => {
+
+    const axiosPublic=useAxiosPublic()
 
     const handleSubmit=e=>{
         e.preventDefault()
@@ -7,7 +11,14 @@ const AddDua = () => {
         const description=e.target.description.value; 
         const reference=e.target.reference.value; 
 
-        console.log(title,description,reference);
+        const dua={title,description,reference};
+
+        axiosPublic.post('/dua',dua)
+        .then(data=>{
+           if(data.data.insertedId){
+              toast.success('Dua is added')
+            }
+        })
 
     }
 

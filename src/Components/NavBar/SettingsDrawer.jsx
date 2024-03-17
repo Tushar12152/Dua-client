@@ -6,7 +6,7 @@ import { MdOutlineDisplaySettings } from "react-icons/md";
 const SettingsDrawer = () => {
     return (
         <div>
-            <div className="drawer drawer-end rounded-l-2xl">
+            <div className="drawer drawer-end rounded-l-2xl z-10">
   <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
   <div className="drawer-content">
     {/* Page content here */}
